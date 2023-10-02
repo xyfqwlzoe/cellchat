@@ -22,13 +22,13 @@ meta <- data.frame(group = labels, row.names = names(labels))
 ## Save as "data.input.rds" and "meta.rds"
 
 # Run cellchat_wrapper.r
-```
+```Bash
 cellchat_wrapper.r \
-#normalized data 
+# normalized data 
 normdata_path \
 # meta data 
 metadata_path \
-#group variable for cellchat, one column name from meta data 
+# group variable for cellchat, one column name from meta data 
 group_var \
 # human or mouse
 species \
