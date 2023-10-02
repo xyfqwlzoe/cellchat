@@ -10,7 +10,7 @@ The normalized count data and cell group information can be obtained from the Se
 ## If you're using "NormalizeData" function from seurat
 ```R
 data.input <- GetAssayData(seurat_object, assay = "RNA", slot = "data") # normalized data matrix
-labels <- Idents(seurat_object)
+labels <- Idents(seurat_object) #make sure Idents(seurat_object)=cell group information
 meta <- data.frame(group = labels, row.names = names(labels)) # create a dataframe of the cell labels
 ```
 ## If you're using "SCTransform" function from seurat
